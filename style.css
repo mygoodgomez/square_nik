@@ -259,5 +259,9 @@ td {
 body {
   font-family: "Merriweather", serif; }
 
+#wrapper {
+  width: 640px;
+  margin: 0 auto; }
+
 p {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }

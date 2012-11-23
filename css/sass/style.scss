@@ -1,0 +1,42 @@
+@import "reset";
+@import "compass/css3";
+
+body {
+	font-family: "Merriweather", serif;
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+}
+
+#wrapper {
+	padding-top:30px;
+	> * {
+		width: 640px;
+		margin: 0 auto;
+	}
+}
+
+/* Header */
+header {
+	h1 {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	#header_minimized {
+		padding:12px 8px 10px;
+		position:fixed;
+		top:10px;
+		left:10px;
+		overflow:hidden;
+		background: rgb(29, 29, 29); /* The Fallback */
+		background: rgba(29, 29, 29, .8);
+		color:#fff;
+	}
+	#header_expanded {
+		display:none;
+	}
+	#photo_bar_container {
+		height:200px;
+	}
+}

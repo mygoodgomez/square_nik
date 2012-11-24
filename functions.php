@@ -104,8 +104,13 @@
 					'concert_heads',
 					'lacma_lights',
 					);
+		$imageIndex = rand(0,sizeof($images)-1);
+		return $imageDir . $images[$imageIndex] . '.jpg';
 
-		return $imageDir . $images[0] . '.jpg';
 
+	}
 
+	function nik_date() {
+		$dateString = "<abbr class='datetime' title='".get_the_date('F j, Y', '', '', false).' at '.get_the_date('g:i a', '', '', false)."'>".get_the_date("n/j/y", '', '', false)."</abbr>";
+		echo $dateString;
 	}

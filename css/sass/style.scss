@@ -1,8 +1,10 @@
 @import "reset";
 @import "compass/css3";
 
-body {
+html, body {
 	font-family: "Merriweather", serif;
+	height:100%;
+	color:#333;
 }
 
 p {
@@ -10,6 +12,10 @@ p {
 }
 
 #wrapper {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	margin:0 auto;
 	padding-top:30px;
 	@include single-box-shadow(#000, 0px, 0px, 30px, 0px);
 	> * {
@@ -30,7 +36,7 @@ header {
 		top:10px;
 		left:10px;
 		overflow:hidden;
-		background: rgb(29, 29, 29); /* The Fallback */
+		background: rgb(29, 29, 29);
 		background: rgba(29, 29, 29, .8);
 		color:#fff;
 	}
@@ -40,4 +46,28 @@ header {
 	#photo_bar_container {
 		height:200px;
 	}
+}
+
+article {
+	> * {
+		max-width: 640px;
+	}
+	h2 {
+		font-size: 32px;
+		font-weight: 900;
+		display: inline-block;
+		margin: 0 15px 20px 0;
+		a {
+			color:#333;
+			text-decoration: none;
+		}
+	}
+	p {
+		margin-bottom: 20px;
+		line-height:24px;
+	}
+}
+
+footer {
+	margin-top:20px;
 }

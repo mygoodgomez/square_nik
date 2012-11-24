@@ -12,7 +12,7 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 
-		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,900|Open+Sans' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript">
 			var headerImage = "<?php echo get_nik_header_image(); ?>";

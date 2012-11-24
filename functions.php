@@ -100,9 +100,15 @@
 	function get_nik_header_image() {
 		$imageDir = get_template_directory_uri().'/images/';
 		$images = array(
-					'turkey_gold',
+					'mexico_house',
+					'san_fran_landscape',
+					'san_fran_landscape_2',
 					'concert_heads',
-					'lacma_lights',
+					'geo_windows',
+					'india_street',
+					'mexico_border_fence',
+					'mosque_gold',
+					'turkey_dome',
 					);
 		$imageIndex = rand(0,sizeof($images)-1);
 		return $imageDir . $images[$imageIndex] . '.jpg';

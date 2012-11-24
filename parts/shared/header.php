@@ -1,7 +1,7 @@
 
 <header>
 	<div id="header_minimized">
-		<h1>NG</h1>
+		<h1><a href="<?php echo site_url(); ?>">NG</a></h1>
 	</div>
 	
 	<div id="header_expanded">

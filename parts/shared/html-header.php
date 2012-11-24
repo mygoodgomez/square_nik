@@ -14,6 +14,9 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans' rel='stylesheet' type='text/css'>
 
+		<script type="text/javascript">
+			var headerImage = "<?php echo get_nik_header_image(); ?>";
+		</script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

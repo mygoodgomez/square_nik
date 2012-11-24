@@ -95,3 +95,17 @@
 			</article>
 		<?php endif;
 	}
+
+
+	function get_nik_header_image() {
+		$imageDir = get_template_directory_uri().'/images/';
+		$images = array(
+					'turkey_gold',
+					'concert_heads',
+					'lacma_lights',
+					);
+
+		return $imageDir . $images[0] . '.jpg';
+
+
+	}

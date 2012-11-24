@@ -10,9 +10,7 @@
 		<?php get_search_form(); ?>
 	</div>
 
-	<div id="photo_bar_container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/lacma_lights.jpg">
-	</div>
+	<div id="photo_bar_container"></div>
 </header>
 
 <div id="wrapper">

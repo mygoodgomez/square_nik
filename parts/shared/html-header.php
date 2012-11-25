@@ -13,6 +13,11 @@
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 
 		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/scripts/site.js"></script>
 
 		<script type="text/javascript">
 			var headerImage = "<?php echo get_nik_header_image(); ?>";

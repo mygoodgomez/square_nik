@@ -22,12 +22,15 @@
 	<li>
 		<article>
 			<div class="article_title">
-				<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				<?php
 				if(the_title('','',false) == '') {
 					echo '<span class="smaller">from</span>';
 				}
+				else {
+					echo '<span class="title_icon symbol">~</span>';					
+				}
 				?>
+				<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				<?php nik_date();?>
 			</div>
 			<div class="post_content">

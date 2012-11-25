@@ -1,22 +1,21 @@
-jQuery(document).ready(function($) {
+$(function() {
 	window.scroll(0,235);
 	$('#photo_bar_container').attr('style', 'background:url('+headerImage+')');
 
-
 	$(window).on('scroll', function(e) {
-		onScrollHandler($);
+		onScrollHandler();
 	});
+
 });
 
-function onScrollHandler($) {
-	var scrolled = jQuery(window).scrollTop();
+function onScrollHandler() {
+	var scrolled = $(window).scrollTop();
 
-	if(scrolled > 240) {
-		$('#header_expanded').stop().fadeTo(250, 0);
-		$('#header_minimized').stop().fadeTo(250, 1);
+	var $navbar = $('#expanded_nav_bar');
+	if(scrolled > 240 && $navbar.is(":visible")) {
+		$navbar.stop().fadeOut(200);
 	}
-	else {
-		$('#header_expanded').stop().fadeTo(250, 1);
-		$('#header_minimized').stop().fadeTo(250, 0);
+	else if(scrolled < 240 && !$navbar.is(":visible")) {
+		$navbar.stop().fadeIn(200);
 	}
 }

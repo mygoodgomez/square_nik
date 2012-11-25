@@ -13,17 +13,21 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+
 <article>
 
-	<h2><?php the_title(); ?></h2>
-	<?php nik_date(); ?>
-	<?php the_content(); ?>			
-
-	<?php if ( get_the_author_meta( 'description' ) ) : ?>
-	<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
-	<h3>About <?php echo get_the_author() ; ?></h3>
-	<?php the_author_meta( 'description' ); ?>
-	<?php endif; ?>
+	<div class="article_title">
+		<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<?php
+		if(the_title('','',false) == '') {
+			echo '<span class="smaller">from</span>';
+		}
+		?>
+		<?php nik_date();?>
+	</div>
+	<div class="post_content">
+		<?php the_content(); ?>
+	</div>
 
 	<?php comments_template( '', true ); ?>
 

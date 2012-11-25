@@ -1,3 +1,15 @@
+/*
+Theme Name: square_nik
+Theme URI: http://nikgomez.com/
+Description: The 2012 theme for nikgomez.com
+Author: Nik Gomez
+Author URI: http://nikgomez.com/
+Version: 1.0
+
+License:
+License URI:
+
+*/
 /**
  * reset.css
  *
@@ -330,25 +342,20 @@ td {
   vertical-align: top;
 }
 
-/* line 4, sass/style.scss */
+/* line 17, sass/style.scss */
 html, body {
   font-family: "Merriweather", serif;
   height: 100%;
   color: #333;
 }
 
-/* line 10, sass/style.scss */
-p {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* line 14, sass/style.scss */
+/* line 23, sass/style.scss */
 a {
   color: #333;
   text-decoration: none;
 }
 
-/* line 19, sass/style.scss */
+/* line 28, sass/style.scss */
 #wrapper {
   min-height: 100%;
   height: auto !important;
@@ -359,24 +366,25 @@ a {
   -moz-box-shadow: 0px 0px 30px 0px black;
   box-shadow: 0px 0px 30px 0px black;
 }
-/* line 26, sass/style.scss */
+/* line 35, sass/style.scss */
 #wrapper > * {
   width: 640px;
   margin: 0 auto;
 }
 
 /* Header */
-/* line 34, sass/style.scss */
+/* line 43, sass/style.scss */
+header a {
+  color: #fff;
+}
+/* line 46, sass/style.scss */
 header h1 {
   font-size: 18px;
   font-weight: 700;
+  display: inline-block;
 }
-/* line 37, sass/style.scss */
-header h1 a {
-  color: #fff;
-}
-/* line 41, sass/style.scss */
-header #header_minimized {
+/* line 51, sass/style.scss */
+header #header_minimized, header #header_expanded {
   padding: 12px 8px 10px;
   position: fixed;
   top: 10px;
@@ -385,34 +393,90 @@ header #header_minimized {
   background: #1d1d1d;
   background: rgba(29, 29, 29, 0.8);
   color: #fff;
-}
-/* line 51, sass/style.scss */
-header #header_expanded {
   display: none;
 }
-/* line 54, sass/style.scss */
+/* line 62, sass/style.scss */
+header #header_expanded {
+  display: inline-block;
+}
+/* line 65, sass/style.scss */
+header #header_expanded h1 {
+  margin-right: 20px;
+}
+/* line 68, sass/style.scss */
+header #header_expanded #pages_list {
+  display: inline;
+}
+/* line 70, sass/style.scss */
+header #header_expanded #pages_list li {
+  display: inline;
+  font-size: 12px;
+  margin-right: 5px;
+}
+/* line 77, sass/style.scss */
 header #photo_bar_container {
   height: 300px;
 }
 
-/* line 60, sass/style.scss */
+/* line 83, sass/style.scss */
 article > * {
   max-width: 640px;
 }
-/* line 63, sass/style.scss */
-article h2 {
-  font-size: 32px;
-  font-weight: 900;
-  display: inline-block;
-  margin: 0 15px 20px 0;
+/* line 86, sass/style.scss */
+article .article_title {
+  margin-bottom: 15px;
 }
-/* line 69, sass/style.scss */
-article p {
-  margin-bottom: 20px;
+/* line 88, sass/style.scss */
+article .article_title h2 {
+  font-size: 32px;
+  display: inline;
+  margin: 0 15px 0 0;
+}
+/* line 94, sass/style.scss */
+article .post_content {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 50px;
   line-height: 24px;
 }
+/* line 98, sass/style.scss */
+article .post_content a {
+  border-bottom: solid 2px #eee;
+}
+/* line 101, sass/style.scss */
+article .post_content p {
+  margin-bottom: 15px;
+}
+/* line 104, sass/style.scss */
+article .post_content blockquote {
+  margin-left: 25px;
+  padding-left: 25px;
+  border-left: solid 10px #f7f7f7;
+  font-style: italic;
+}
+/* line 110, sass/style.scss */
+article .post_content ol, article .post_content ul {
+  margin-left: 40px;
+}
+/* line 114, sass/style.scss */
+article .post_content ul li {
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+/* line 120, sass/style.scss */
+article .post_content ol li {
+  list-style-type: decimal;
+  margin-bottom: 10px;
+}
+/* line 126, sass/style.scss */
+article .wp-caption {
+  font-size: 14px;
+}
+/* line 129, sass/style.scss */
+article .smaller {
+  font-size: .7em;
+}
 
-/* line 75, sass/style.scss */
+/* line 134, sass/style.scss */
 footer {
   margin-top: 20px;
 }

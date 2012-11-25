@@ -21,9 +21,18 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
 		<article>
-			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<?php nik_date();?>
-			<?php the_content(); ?>
+			<div class="article_title">
+				<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<?php
+				if(the_title('','',false) == '') {
+					echo '<span class="smaller">from</span>';
+				}
+				?>
+				<?php nik_date();?>
+			</div>
+			<div class="post_content">
+				<?php the_content(); ?>
+			</div>
 		</article>
 	</li>
 <?php endwhile; ?>

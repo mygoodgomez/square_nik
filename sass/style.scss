@@ -1,0 +1,136 @@
+/*
+Theme Name: square_nik
+Theme URI: http://nikgomez.com/
+Description: The 2012 theme for nikgomez.com
+Author: Nik Gomez
+Author URI: http://nikgomez.com/
+Version: 1.0
+
+License:
+License URI:
+
+*/
+
+@import "reset";
+@import "compass/css3";
+
+html, body {
+	font-family: "Merriweather", serif;
+	height:100%;
+	color:#333;
+}
+
+a {
+	color:#333;
+	text-decoration: none;
+}
+
+#wrapper {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	margin:0 auto;
+	padding-top:30px;
+	@include single-box-shadow(#000, 0px, 0px, 30px, 0px);
+	> * {
+		width: 640px;
+		margin: 0 auto;
+	}
+}
+
+/* Header */
+header {
+	a {
+		color:#fff;
+	}
+	h1 {
+		font-size: 18px;
+		font-weight: 700;
+		display: inline-block;
+	}
+	#header_minimized {
+		padding:12px 8px 10px;
+		position:fixed;
+		top:10px;
+		left:10px;
+		overflow:hidden;
+		background: rgb(29, 29, 29);
+		background: rgba(29, 29, 29, .8);
+		color:#fff;
+		display: none;
+	}
+	#header_expanded {
+		@extend #header_minimized;
+		display:inline-block;
+		h1 {
+			margin-right: 20px;
+		}
+		#pages_list {
+			display: inline;
+			li {
+				display: inline;
+				font-size: 12px;
+				margin-right:5px;
+			}
+		}
+	}
+	#photo_bar_container {
+		height:300px;
+	}
+}
+
+article {
+	> * {
+		max-width: 640px;
+	}
+	.article_title {
+		margin-bottom: 15px;
+		h2 {
+			font-size: 32px;
+			display: inline;
+			margin: 0 15px 0 0;
+		}		
+	}
+	.post_content {
+		font-family: "Open Sans", sans-serif;
+		margin:0 0 50px;
+		line-height: 24px;
+		a {
+			border-bottom: solid 2px #eee;
+		}
+		p {
+			margin-bottom: 15px;
+		}
+		blockquote {
+			margin-left:25px;
+			padding-left:25px;
+			border-left:solid 10px #f7f7f7;
+			font-style: italic;
+		}
+		ol, ul {
+			margin-left: 40px;
+		}
+		ul {
+			li {
+				list-style-type: disc;
+				margin-bottom: 10px;
+			}
+		}
+		ol {
+			li {
+				list-style-type: decimal;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.wp-caption {
+		font-size: 14px;
+	}
+	.smaller {
+		font-size: .7em;
+	}
+}
+
+footer {
+	margin-top:20px;
+}

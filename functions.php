@@ -66,7 +66,7 @@
 		wp_register_script( 'site', get_template_directory_uri().'/scripts/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
 
-		wp_register_style( 'screen', get_template_directory_uri().'/css/style.css', '', '', 'screen' );
+		wp_register_style( 'screen', get_template_directory_uri().'/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
 	}	
 
@@ -117,6 +117,6 @@
 	}
 
 	function nik_date() {
-		$dateString = "<abbr class='datetime' title='".get_the_date('F j, Y', '', '', false).' at '.get_the_date('g:i a', '', '', false)."'>".get_the_date("n/j/y", '', '', false)."</abbr>";
+		$dateString = "<abbr class='datetime' title='".get_the_date('F j, Y', '', '', false).' at '.get_the_date('g:i a', '', '', false)."'>".get_the_date("M j 'y", '', '', false)."</abbr>";
 		echo $dateString;
 	}

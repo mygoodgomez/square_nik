@@ -6,16 +6,45 @@ $(function() {
 		onScrollHandler();
 	});
 
+	selectAlbumCovers();
+
 });
 
 function onScrollHandler() {
 	var scrolled = $(window).scrollTop();
+	var scrollLimit = 255;
 
 	var $navbar = $('#expanded_nav_bar');
-	if(scrolled > 240 && $navbar.is(":visible")) {
-		$navbar.stop().fadeOut(200);
+	var $elementsToAnimate = $('#expanded_nav_bar, #lastfm_badge_wrapper');
+
+	if(scrolled > scrollLimit && $navbar.is(":visible")) {
+		$elementsToAnimate.stop().animate({top:"-50"}, function(elem) {
+			$elementsToAnimate.hide();
+		});
 	}
-	else if(scrolled < 240 && !$navbar.is(":visible")) {
-		$navbar.stop().fadeIn(200);
+	else if(scrolled < scrollLimit && !$navbar.is(":visible")) {
+		$elementsToAnimate.show().stop().animate({top:"0"})
 	}
+}
+
+function selectAlbumCovers() {
+	var $covers = $('#lastfm_badge_wrapper li');
+	
+	var selectedCoverIds = [];
+
+	while(selectedCoverIds.length < 9) {
+		var index = Math.floor(Math.random()*($covers.length));
+		if($.inArray(index, selectedCoverIds) === -1) {
+			selectedCoverIds.push(index);
+		}
+	}
+
+	var $newCovers = $('<ul id="#lastfm_badge_wrapper"></ul>')
+	for(var i = 0; i < $covers.length; i++) {
+		if($.inArray(i, selectedCoverIds) !== -1) {
+			$newCovers.append($covers[i]);
+		}
+	}
+
+	$('#lastfm_badge_wrapper').html($newCovers.html()).css('display','inline');
 }

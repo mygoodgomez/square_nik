@@ -11,8 +11,10 @@ License URI:
 
 */
 
-@import "reset";
 @import "compass/css3";
+
+@import "reset";
+@import "lastfm";
 
 @font-face {
 	font-family: SignifyLite;
@@ -36,6 +38,17 @@ abbr {
 	}
 }
 
+h2 {
+	font-size:42px;
+	margin-bottom:20px;
+}
+
+h3 {
+	font-size: 32px;
+	display: inline;
+	margin: 0 15px 0 0;
+}		
+
 .symbol {
 	font-family: "SignifyLite";
 }
@@ -49,7 +62,8 @@ abbr {
 	@include single-box-shadow(#000, 0px, 0px, 30px, 5px);
 	> * {
 		width: 640px;
-		margin: 0 auto;
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
@@ -66,7 +80,7 @@ header {
 	#nav_bar {
 		padding:12px 8px 10px;
 		position:fixed;
-		top:10px;
+		top:0px;
 		left:10px;
 		overflow:hidden;
 		background: rgb(29, 29, 29);
@@ -110,11 +124,6 @@ article {
 	.article_title {
 		margin-bottom: 15px;
 		position:relative;
-		h2 {
-			font-size: 32px;
-			display: inline;
-			margin: 0 15px 0 0;
-		}		
 		.title_icon {
 			opacity: 0;
 			position:absolute;
@@ -174,6 +183,38 @@ article {
 	}
 }
 
+.page_title {
+	@extend .article_title;
+}
+.page_content {
+	@extend .post_content;
+	#smart-archives-block, #smart-archives-list {
+		margin-bottom:10px;
+		a {
+			color:#333;
+			border-bottom:none;
+			font-weight: bold;
+			@include transition-property(color);
+			@include transition-duration(.5s);
+			&:hover {
+				color: #666;
+			}
+		}
+		h2 {
+			@extend h3;
+			font-size: 18px;
+		}
+		ul {
+			margin-bottom: 10px;
+		}
+		li {
+			margin-bottom: 0;
+		}
+	}
+}
+
 footer {
-	margin-top:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-size:12px;
 }

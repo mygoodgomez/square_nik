@@ -17,9 +17,21 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
 		<article>
-			<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-			<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
-			<?php the_content(); ?>
+			<div class="article_title">
+				<?php
+				if(the_title('','',false) == '') {
+					echo '<span class="smaller">from</span>';
+				}
+				else {
+					echo '<span class="title_icon symbol">~</span>';					
+				}
+				?>
+				<h3><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+				<?php nik_date();?>
+			</div>
+			<div class="post_content">
+				<?php the_content(); ?>
+			</div>
 		</article>
 	</li>
 <?php endwhile; ?>

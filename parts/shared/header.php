@@ -1,7 +1,7 @@
 
 <header>
 	<div id="nav_bar">
-		<h1><a href="<?php echo site_url(); ?>">NG</a></h1>
+		<h1><a href="<?php echo home_url(); ?>">NG</a></h1>
 	</div>
 	<div id="expanded_nav_bar">
 		<ul id="pages_list">

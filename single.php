@@ -13,25 +13,25 @@
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-
 <article>
-
 	<div class="article_title">
-		<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<?php
 		if(the_title('','',false) == '') {
 			echo '<span class="smaller">from</span>';
 		}
+		else {
+			echo '<span class="title_icon symbol">~</span>';					
+		}
 		?>
+		<h3><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 		<?php nik_date();?>
 	</div>
 	<div class="post_content">
 		<?php the_content(); ?>
 	</div>
-
 	<?php comments_template( '', true ); ?>
-
 </article>
+
 <?php endwhile; ?>
 
 <?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>

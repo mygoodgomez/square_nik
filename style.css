@@ -391,6 +391,7 @@ td {
 /* line 42, sass/_lastfm.scss */
 #lastfm_badge_wrapper li img {
   position: absolute;
+  left: 0;
   width: 36px;
   height: 36px;
 }

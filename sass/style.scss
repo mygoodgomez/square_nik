@@ -61,7 +61,7 @@ h3 {
 	margin:0 auto;
 	padding-top:30px;
 	@include single-box-shadow(#000, 0px, 0px, 30px, 5px);
-	> * {
+	> ol, footer, article {
 		width: 640px;
 		margin-right: auto;
 		margin-left: auto;

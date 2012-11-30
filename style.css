@@ -351,7 +351,7 @@ td {
   list-style-image: none;
   display: none;
   margin: 0;
-  padding: 5px 8px;
+  padding: 4px 8px 5px;
   list-style: none;
   text-decoration: none;
   z-index: 0;
@@ -453,7 +453,7 @@ h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h
   box-shadow: 0px 0px 30px 5px black;
 }
 /* line 64, sass/style.scss */
-#wrapper > * {
+#wrapper > ol, #wrapper footer, #wrapper article {
   width: 640px;
   margin-right: auto;
   margin-left: auto;

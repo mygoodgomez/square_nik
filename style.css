@@ -593,17 +593,18 @@ article .post_content ol li, article .page_content ol li {
 /* line 180, sass/style.scss */
 article .wp-caption {
   font-size: 14px;
+  margin: 0 auto;
 }
-/* line 183, sass/style.scss */
+/* line 184, sass/style.scss */
 article .smaller {
   font-size: .7em;
 }
 
-/* line 193, sass/style.scss */
+/* line 194, sass/style.scss */
 .page_content #smart-archives-block, .page_content #smart-archives-list {
   margin-bottom: 10px;
 }
-/* line 195, sass/style.scss */
+/* line 196, sass/style.scss */
 .page_content #smart-archives-block a, .page_content #smart-archives-list a {
   color: #333;
   border-bottom: none;
@@ -617,36 +618,36 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 201, sass/style.scss */
+/* line 202, sass/style.scss */
 .page_content #smart-archives-block a:hover, .page_content #smart-archives-list a:hover {
   color: #666;
 }
-/* line 205, sass/style.scss */
+/* line 206, sass/style.scss */
 .page_content #smart-archives-block h2, .page_content #smart-archives-list h2 {
   font-size: 18px;
 }
-/* line 209, sass/style.scss */
+/* line 210, sass/style.scss */
 .page_content #smart-archives-block ul, .page_content #smart-archives-list ul {
   margin-bottom: 10px;
 }
-/* line 212, sass/style.scss */
+/* line 213, sass/style.scss */
 .page_content #smart-archives-block li, .page_content #smart-archives-list li {
   margin-bottom: 0;
 }
 
-/* line 218, sass/style.scss */
+/* line 219, sass/style.scss */
 #pagination_container {
   text-align: center;
 }
-/* line 221, sass/style.scss */
+/* line 222, sass/style.scss */
 #pagination_container .page-numbers:not(.next), #pagination_container .page-numbers:not(.prev) {
   margin: 0 2px;
 }
-/* line 224, sass/style.scss */
+/* line 225, sass/style.scss */
 #pagination_container .page-numbers.current {
   font-weight: bold;
 }
-/* line 227, sass/style.scss */
+/* line 228, sass/style.scss */
 #pagination_container .page-numbers:not(.current) {
   border-bottom: solid 2px #eee;
   -webkit-transition-property: border-bottom;
@@ -658,20 +659,20 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 231, sass/style.scss */
+/* line 232, sass/style.scss */
 #pagination_container .page-numbers:not(.current):hover {
   border-bottom: solid 2px #ccc;
 }
-/* line 235, sass/style.scss */
+/* line 236, sass/style.scss */
 #pagination_container .page-numbers.next {
   margin-left: 10px;
 }
-/* line 238, sass/style.scss */
+/* line 239, sass/style.scss */
 #pagination_container .page-numbers.prev {
   margin-right: 10px;
 }
 
-/* line 244, sass/style.scss */
+/* line 245, sass/style.scss */
 footer {
   padding-top: 20px;
   padding-bottom: 20px;

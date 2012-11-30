@@ -97,7 +97,7 @@
 	}
 
 
-	function get_nik_header_image() {
+	function get_nik_header_images($getOne = false) {
 		$imageDir = get_template_directory_uri().'/images/';
 		$images = array(
 					'mexico_house',
@@ -110,10 +110,16 @@
 					'mosque_gold',
 					'turkey_dome',
 					);
-		$imageIndex = rand(0,sizeof($images)-1);
-		return $imageDir . $images[$imageIndex] . '.jpg';
-
-
+		if($getOne) {
+			$imageIndex = rand(0,sizeof($images)-1);
+			return $imageDir . $images[$imageIndex] . '.jpg';
+		}
+		else {
+			foreach($images as $k=>$v) {
+				$images[$k] = $imageDir . $images[$k] . '.jpg';
+			}
+			return json_encode($images);
+		}
 	}
 
 	function nik_date() {

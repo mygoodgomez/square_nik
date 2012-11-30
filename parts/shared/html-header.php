@@ -20,7 +20,8 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/scripts/site.js"></script>
 
 		<script type="text/javascript">
-			var headerImage = "<?php echo get_nik_header_image(); ?>";
+			var headerImage = "<?php echo get_nik_header_images(true); ?>";
+			var allHeaderImages = <?php echo get_nik_header_images(); ?>;
 		</script>
 		<?php wp_head(); ?>
 	</head>

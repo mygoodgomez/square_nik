@@ -8,6 +8,9 @@ $(function() {
 
 	selectAlbumCovers();
 
+	for(var i = 0; i < allHeaderImages.length; i++) {
+		$.get(allHeaderImages[i]);
+	}
 });
 
 function onScrollHandler() {

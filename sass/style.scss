@@ -61,7 +61,7 @@ h3 {
 	margin:0 auto;
 	padding-top:30px;
 	@include single-box-shadow(#000, 0px, 0px, 30px, 5px);
-	> ol, footer, article {
+	> ol, footer, article, #pagination_container {
 		width: 640px;
 		margin-right: auto;
 		margin-left: auto;
@@ -211,6 +211,32 @@ article {
 		}
 		li {
 			margin-bottom: 0;
+		}
+	}
+}
+
+#pagination_container {
+	text-align:center;
+	.page-numbers {
+		&:not(.next), &:not(.prev) {
+			margin: 0 2px;
+		}
+		&.current {
+			font-weight: bold;
+		}
+		&:not(.current) {
+			border-bottom: solid 2px #eee;
+			@include transition-property(border-bottom);
+			@include transition-duration(.5s);
+			&:hover {
+				border-bottom: solid 2px #ccc;
+			}			
+		}
+		&.next {
+			margin-left:10px;
+		}
+		&.prev {
+			margin-right:10px;
 		}
 	}
 }

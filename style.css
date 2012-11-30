@@ -453,7 +453,7 @@ h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h
   box-shadow: 0px 0px 30px 5px black;
 }
 /* line 64, sass/style.scss */
-#wrapper > ol, #wrapper footer, #wrapper article {
+#wrapper > ol, #wrapper footer, #wrapper article, #wrapper #pagination_container {
   width: 640px;
   margin-right: auto;
   margin-left: auto;
@@ -635,6 +635,43 @@ article .smaller {
 }
 
 /* line 218, sass/style.scss */
+#pagination_container {
+  text-align: center;
+}
+/* line 221, sass/style.scss */
+#pagination_container .page-numbers:not(.next), #pagination_container .page-numbers:not(.prev) {
+  margin: 0 2px;
+}
+/* line 224, sass/style.scss */
+#pagination_container .page-numbers.current {
+  font-weight: bold;
+}
+/* line 227, sass/style.scss */
+#pagination_container .page-numbers:not(.current) {
+  border-bottom: solid 2px #eee;
+  -webkit-transition-property: border-bottom;
+  -moz-transition-property: border-bottom;
+  -o-transition-property: border-bottom;
+  transition-property: border-bottom;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 231, sass/style.scss */
+#pagination_container .page-numbers:not(.current):hover {
+  border-bottom: solid 2px #ccc;
+}
+/* line 235, sass/style.scss */
+#pagination_container .page-numbers.next {
+  margin-left: 10px;
+}
+/* line 238, sass/style.scss */
+#pagination_container .page-numbers.prev {
+  margin-right: 10px;
+}
+
+/* line 244, sass/style.scss */
 footer {
   padding-top: 20px;
   padding-bottom: 20px;

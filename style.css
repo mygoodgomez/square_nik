@@ -502,6 +502,7 @@ header #expanded_nav_bar #pages_list li {
 }
 /* line 107, sass/style.scss */
 header #expanded_nav_bar .search_icon {
+  display: none;
   position: relative;
   top: 1px;
   line-height: 0px;
@@ -509,21 +510,21 @@ header #expanded_nav_bar .search_icon {
   font-size: 14px;
   cursor: pointer;
 }
-/* line 116, sass/style.scss */
+/* line 117, sass/style.scss */
 header #photo_bar_container {
   height: 300px;
 }
 
-/* line 122, sass/style.scss */
+/* line 123, sass/style.scss */
 article > * {
   max-width: 640px;
 }
-/* line 125, sass/style.scss */
+/* line 126, sass/style.scss */
 article .article_title, article .page_title {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 128, sass/style.scss */
+/* line 129, sass/style.scss */
 article .article_title .title_icon, article .page_title .title_icon {
   opacity: 0;
   position: absolute;
@@ -538,17 +539,17 @@ article .article_title .title_icon, article .page_title .title_icon {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 137, sass/style.scss */
+/* line 138, sass/style.scss */
 article .article_title:hover .title_icon, article .page_title:hover .title_icon {
   opacity: 1;
 }
-/* line 142, sass/style.scss */
+/* line 143, sass/style.scss */
 article .post_content, article .page_content {
   font-family: "Open Sans", sans-serif;
   margin: 0 0 50px;
   line-height: 24px;
 }
-/* line 146, sass/style.scss */
+/* line 147, sass/style.scss */
 article .post_content a, article .page_content a {
   border-bottom: solid 2px #eee;
   -webkit-transition-property: border-bottom;
@@ -560,49 +561,49 @@ article .post_content a, article .page_content a {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 150, sass/style.scss */
+/* line 151, sass/style.scss */
 article .post_content a:hover, article .page_content a:hover {
   border-bottom: solid 2px #ccc;
 }
-/* line 154, sass/style.scss */
+/* line 155, sass/style.scss */
 article .post_content p, article .page_content p {
   margin-bottom: 15px;
 }
-/* line 157, sass/style.scss */
+/* line 158, sass/style.scss */
 article .post_content blockquote, article .page_content blockquote {
   margin-left: 25px;
   padding-left: 25px;
   border-left: solid 10px #f7f7f7;
   font-style: italic;
 }
-/* line 163, sass/style.scss */
+/* line 164, sass/style.scss */
 article .post_content ol, article .page_content ol, article .post_content ul, article .page_content ul {
   margin-left: 40px;
 }
-/* line 167, sass/style.scss */
+/* line 168, sass/style.scss */
 article .post_content ul li, article .page_content ul li {
   list-style-type: disc;
   margin-bottom: 10px;
 }
-/* line 173, sass/style.scss */
+/* line 174, sass/style.scss */
 article .post_content ol li, article .page_content ol li {
   list-style-type: decimal;
   margin-bottom: 10px;
 }
-/* line 179, sass/style.scss */
+/* line 180, sass/style.scss */
 article .wp-caption {
   font-size: 14px;
 }
-/* line 182, sass/style.scss */
+/* line 183, sass/style.scss */
 article .smaller {
   font-size: .7em;
 }
 
-/* line 192, sass/style.scss */
+/* line 193, sass/style.scss */
 .page_content #smart-archives-block, .page_content #smart-archives-list {
   margin-bottom: 10px;
 }
-/* line 194, sass/style.scss */
+/* line 195, sass/style.scss */
 .page_content #smart-archives-block a, .page_content #smart-archives-list a {
   color: #333;
   border-bottom: none;
@@ -616,24 +617,24 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 200, sass/style.scss */
+/* line 201, sass/style.scss */
 .page_content #smart-archives-block a:hover, .page_content #smart-archives-list a:hover {
   color: #666;
 }
-/* line 204, sass/style.scss */
+/* line 205, sass/style.scss */
 .page_content #smart-archives-block h2, .page_content #smart-archives-list h2 {
   font-size: 18px;
 }
-/* line 208, sass/style.scss */
+/* line 209, sass/style.scss */
 .page_content #smart-archives-block ul, .page_content #smart-archives-list ul {
   margin-bottom: 10px;
 }
-/* line 211, sass/style.scss */
+/* line 212, sass/style.scss */
 .page_content #smart-archives-block li, .page_content #smart-archives-list li {
   margin-bottom: 0;
 }
 
-/* line 217, sass/style.scss */
+/* line 218, sass/style.scss */
 footer {
   padding-top: 20px;
   padding-bottom: 20px;

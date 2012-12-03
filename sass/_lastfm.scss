@@ -3,12 +3,10 @@
 @import "compass/css3";
 
 #lastfm_badge_wrapper {
-	list-style-type: none;
-	list-style-image: none;
 	display: none;
+	color:#fff;
 	margin: 0;
-	padding:4px 8px 5px;
-	list-style:none;
+	padding:2px 8px 2px;
 	text-decoration:none;
 	z-index: 0;
 	position: fixed;
@@ -17,33 +15,40 @@
 	z-index:1;
 	background: rgb(29, 29, 29);
 	background: rgba(29, 29, 29, .8);
-}
 
-#lastfm_badge_wrapper {
+	.music_icon {
+		position:relative;
+		top:-9px;
+		margin-right: 5px;
+		font-weight: bold;
+		@include text-shadow(1px 1px 1px #222);
+	}
+	ul {
+		list-style-type: none;
+		list-style-image: none;
+		list-style:none;
+	}
 	li {
 		margin:0;
-		float: right;
+		display:inline-block;
 		position:relative;
 		z-index: 1;
 		@include single-box-shadow(#000, 1px, 1px, 2px, 0px);
 		&:not(:last-child) {
-			margin-left:10px;
+			margin-right:10px;
 		}
 		a {
-			display:block;
+			display:inline-block;
 			position:relative;
-			float: left;
-			width:36px;
-			height:36px;
-			text-indent:-1000em;
-			overflow:hidden;
 			z-index:1;			
 		}		
 		img {
 			position:absolute;
 			left:0;
-			width:36px;
-			height:36px;
 		}
+	}
+	ul * {
+		width:36px;
+		height:36px;			
 	}
 }

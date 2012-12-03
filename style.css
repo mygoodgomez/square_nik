@@ -347,12 +347,10 @@ td {
 /* ---------------------------------------- [ Last.fm Covers ] */
 /* line 5, sass/_lastfm.scss */
 #lastfm_badge_wrapper {
-  list-style-type: none;
-  list-style-image: none;
   display: none;
+  color: #fff;
   margin: 0;
-  padding: 4px 8px 5px;
-  list-style: none;
+  padding: 2px 8px 2px;
   text-decoration: none;
   z-index: 0;
   position: fixed;
@@ -362,36 +360,47 @@ td {
   background: #1d1d1d;
   background: rgba(29, 29, 29, 0.8);
 }
-
-/* line 23, sass/_lastfm.scss */
+/* line 19, sass/_lastfm.scss */
+#lastfm_badge_wrapper .music_icon {
+  position: relative;
+  top: -9px;
+  margin-right: 5px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222222;
+}
+/* line 26, sass/_lastfm.scss */
+#lastfm_badge_wrapper ul {
+  list-style-type: none;
+  list-style-image: none;
+  list-style: none;
+}
+/* line 31, sass/_lastfm.scss */
 #lastfm_badge_wrapper li {
   margin: 0;
-  float: right;
+  display: inline-block;
   position: relative;
   z-index: 1;
   -webkit-box-shadow: 1px 1px 2px 0px black;
   -moz-box-shadow: 1px 1px 2px 0px black;
   box-shadow: 1px 1px 2px 0px black;
 }
-/* line 29, sass/_lastfm.scss */
+/* line 37, sass/_lastfm.scss */
 #lastfm_badge_wrapper li:not(:last-child) {
-  margin-left: 10px;
+  margin-right: 10px;
 }
-/* line 32, sass/_lastfm.scss */
+/* line 40, sass/_lastfm.scss */
 #lastfm_badge_wrapper li a {
-  display: block;
+  display: inline-block;
   position: relative;
-  float: left;
-  width: 36px;
-  height: 36px;
-  text-indent: -1000em;
-  overflow: hidden;
   z-index: 1;
 }
-/* line 42, sass/_lastfm.scss */
+/* line 45, sass/_lastfm.scss */
 #lastfm_badge_wrapper li img {
   position: absolute;
   left: 0;
+}
+/* line 50, sass/_lastfm.scss */
+#lastfm_badge_wrapper ul * {
   width: 36px;
   height: 36px;
 }

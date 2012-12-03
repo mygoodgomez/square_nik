@@ -32,7 +32,7 @@ function onScrollHandler() {
 }
 
 function selectAlbumCovers() {
-	var $covers = $('#lastfm_badge_wrapper li');
+	var $covers = $('#lastfm_badge_wrapper ul li');
 	
 	var selectedCoverIds = [];
 
@@ -50,5 +50,6 @@ function selectAlbumCovers() {
 		}
 	}
 
-	$('#lastfm_badge_wrapper').html($newCovers.html()).css('display','inline');
+	$('#lastfm_badge_wrapper ul').html($newCovers.html()).css('display','inline');
+	$('#lastfm_badge_wrapper').show();
 }

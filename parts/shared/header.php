@@ -13,7 +13,7 @@
 	</div>
 
 	<div id="lastfm_badge_wrapper">
-		<a class="symbol music_icon" href="http://www.last.fm/user/Niksterg11/charts?subtype=albums">M</a>
+		<a class="symbol music_icon" href="http://www.last.fm/user/Niksterg11/charts?rangetype=week&subtype=albums" target="_blank">M</a>
 		<ul>
 			<?php 
 				if(function_exists('ilastfm')) {

@@ -10,7 +10,6 @@ $(function() {
 
 	for(var i = 0; i < allHeaderImages.length; i++) {
 		new Image().src = allHeaderImages[i];
-		// $.get(allHeaderImages[i]);
 	}
 });
 

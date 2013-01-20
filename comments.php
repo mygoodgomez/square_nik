@@ -28,6 +28,11 @@
 
 	<?php // You can start editing here -- including this comment! ?>
 
+	<?php 
+		// I'd like to use the facebook comment plugin, so don't use wordpress' stuff
+		return; 
+	?>
+
 	<?php if ( have_comments() ) : ?>
 
 	<h2><?php comments_number(); ?></h2>

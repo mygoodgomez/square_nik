@@ -2,8 +2,8 @@ $(function() {
 	window.scroll(0,235);
 	$('#photo_bar_container').attr('style', 'background:url('+headerImage+')');
 
-	$(window).on('scroll', function(e) {
-		// onScrollHandler();
+	$(window).on('resize', function(e) {
+		onResizeHandler();
 	});
 
 	selectAlbumCovers();
@@ -13,40 +13,43 @@ $(function() {
 	}
 });
 
-function onScrollHandler() {
-	var scrolled = $(window).scrollTop();
-	var scrollLimit = 255;
-
-	var $navbar = $('#nav_bar');
-
-	if(scrolled > scrollLimit && $navbar.is(":visible")) {
-		$elementsToAnimate.stop().animate({top:"-50"}, function(elem) {
-			$elementsToAnimate.hide();
-		});
-	}
-	else if(scrolled < scrollLimit && !$navbar.is(":visible")) {
-		$elementsToAnimate.show().stop().animate({top:"0"})
-	}
+function onResizeHandler() {
+	selectAlbumCovers();
 }
 
 function selectAlbumCovers() {
 	var $covers = $('#lastfm_badge_wrapper ul li');
+	var coverWidth = $covers.first().outerWidth() + 10;
+	var $navBar = $('#nav_bar');
+	var $h1 = $navBar.find('h1');
+	var $pagesList = $navBar.find('#pages_list');
+
+	var coversAllowedWidth = $(window).width() - 200 - $h1.outerWidth() - $pagesList.outerWidth();
+	console.log(coversAllowedWidth);
 	
-	var selectedCoverIds = [];
-
-	while(selectedCoverIds.length < 9) {
-		var index = Math.floor(Math.random()*($covers.length));
-		if($.inArray(index, selectedCoverIds) === -1) {
-			selectedCoverIds.push(index);
+	$covers.each(function(i) {
+		if((i * coverWidth) < coversAllowedWidth) {
+			$(this).css({'display':'inline-block'});
+		} else {
+			$(this).css({'display':'none'});
 		}
-	}
+	});
 
-	var $newCovers = $('<ul id="#lastfm_badge_wrapper"></ul>')
-	for(var i = 0; i < $covers.length; i++) {
-		if($.inArray(i, selectedCoverIds) !== -1) {
-			$newCovers.append($covers[i]);
-		}
-	}
+	// var selectedCoverIds = [];
 
-	$('#lastfm_badge_wrapper ul').html($newCovers.html()).css('display','inline');
+	// while(selectedCoverIds.length < 9) {
+	// 	var index = Math.floor(Math.random()*($covers.length));
+	// 	if($.inArray(index, selectedCoverIds) === -1) {
+	// 		selectedCoverIds.push(index);
+	// 	}
+	// }
+
+	// var $newCovers = $('<ul id="#lastfm_badge_wrapper"></ul>')
+	// for(var i = 0; i < $covers.length; i++) {
+	// 	if($.inArray(i, selectedCoverIds) !== -1) {
+	// 		$newCovers.append($covers[i]);
+	// 	}
+	// }
+
+	// $('#lastfm_badge_wrapper ul').html($newCovers.html()).css('display','inline');
 }

@@ -6,6 +6,7 @@
 	color:#fff;
 	text-decoration:none;
 	display: inline;
+	margin-left:10px;
 
 	.music_icon {
 		position:relative;
@@ -18,15 +19,16 @@
 		list-style-type: none;
 		list-style-image: none;
 		list-style:none;
+		display: inline;
 	}
 	li {
 		margin:0;
-		display:inline-block;
+		display:none;
 		position:relative;
 		z-index: 1;
 		@include single-box-shadow(#000, 1px, 1px, 2px, 0px);
-		&:not(:last-child) {
-			margin-right:10px;
+		&:not(:first-child) {
+			margin-left:10px;
 		}
 		a {
 			display:inline-block;

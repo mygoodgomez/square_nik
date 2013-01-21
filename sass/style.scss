@@ -63,7 +63,8 @@ h3 {
 header {
 	text-align:center;
 	#nav_bar {
-		padding:5px 8px 2px;
+		height:39px;
+		padding:5px 8px 3px;
 		position:relative;
 		top:-60px;
 		overflow:hidden;
@@ -87,7 +88,7 @@ header {
 		#pages_list {
 			display: inline-block;
 			vertical-align: top;
-			margin: 0 10px;
+			margin: 0 0 0 10px;
 			position:relative;
 			top: 10px;
 			li {

@@ -10,357 +10,79 @@ License:
 License URI:
 
 */
-/**
- * reset.css
- *
- * Adapted from:
- * Normalize.css by Nicolas Gallagher and Jonathan Neal: https://github.com/necolas/normalize.css/
- * HTML5 boilerplate: http://html5boilerplate.com/
- * HTML5 Doctor Reset by Eric Meyer and Richard Clark: html5doctor.com/html-5-reset-stylesheet/
- *
- * Modified by Elliot Jay Stocks
- */
-/* line 81, sass/_reset.scss */
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-.page_content #smart-archives-block h2,
-.page_content #smart-archives-list h2,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h2, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
+  font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
 }
 
-/* line 92, sass/_reset.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-  display: block;
-}
-
-/* line 96, sass/_reset.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 98, sass/_reset.scss */
-audio:not([controls]) {
-  display: none;
-}
-
-/* line 100, sass/_reset.scss */
-[hidden] {
-  display: none;
-}
-
-/* line 102, sass/_reset.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+  line-height: 1;
 }
 
-/* line 104, sass/_reset.scss */
-body {
-  margin: 0;
-}
-
-/* line 106, sass/_reset.scss */
-h1, h2, h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h2, h4, h5, h6 {
-  font-weight: normal;
-}
-
-/* line 108, sass/_reset.scss */
-a {
-  color: blue;
-}
-
-/* line 110, sass/_reset.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/* line 112, sass/_reset.scss */
-li {
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
   list-style: none;
 }
 
-/* line 114, sass/_reset.scss */
-abbr[title] {
-  border-bottom: none;
-}
-
-/* line 117, sass/_reset.scss */
-b,
-strong {
-  font-weight: 700;
-}
-
-/* line 121, sass/_reset.scss */
-i,
-em,
-dfn {
-  font-style: italic;
-}
-
-/* line 123, sass/_reset.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/* line 125, sass/_reset.scss */
-ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
-}
-
-/* line 127, sass/_reset.scss */
-mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-/* line 132, sass/_reset.scss */
-pre,
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
-}
-
-/* line 134, sass/_reset.scss */
-pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-/* line 136, sass/_reset.scss */
-q {
-  quotes: none;
-}
-
-/* line 139, sass/_reset.scss */
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-/* line 141, sass/_reset.scss */
-small {
-  font-size: 85%;
-}
-
-/* line 144, sass/_reset.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 146, sass/_reset.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 148, sass/_reset.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* line 150, sass/_reset.scss */
-img {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
-}
-
-/* line 152, sass/_reset.scss */
-label {
-  cursor: pointer;
-}
-
-/* line 156, sass/_reset.scss */
-input,
-select,
-textarea {
-  font-size: 100%;
-  margin: 0;
-  vertical-align: baseline;
-  *vertical-align: middle;
-}
-
-/* line 159, sass/_reset.scss */
-button,
-input {
-  line-height: normal;
-  *overflow: visible;
-}
-
-/* line 164, sass/_reset.scss */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  cursor: pointer;
-  -webkit-appearance: button;
-}
-
-/* line 167, sass/_reset.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-}
-
-/* line 169, sass/_reset.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-/* line 170, sass/_reset.scss */
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/* line 173, sass/_reset.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* line 175, sass/_reset.scss */
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-/* line 177, sass/_reset.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 179, sass/_reset.scss */
-td {
-  vertical-align: top;
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
 }
 
 /* ---------------------------------------- [ Last.fm Covers ] */
 /* line 5, sass/_lastfm.scss */
 #lastfm_badge_wrapper {
-  display: none;
   color: #fff;
-  margin: 0;
-  padding: 2px 8px 2px;
   text-decoration: none;
-  z-index: 0;
-  position: fixed;
-  right: 10px;
-  top: 0px;
-  z-index: 1;
-  background: #1d1d1d;
-  background: rgba(29, 29, 29, 0.8);
+  display: inline;
 }
-/* line 19, sass/_lastfm.scss */
+/* line 10, sass/_lastfm.scss */
 #lastfm_badge_wrapper .music_icon {
   position: relative;
   top: -9px;
@@ -368,13 +90,13 @@ td {
   font-weight: bold;
   text-shadow: 1px 1px 1px #222222;
 }
-/* line 26, sass/_lastfm.scss */
+/* line 17, sass/_lastfm.scss */
 #lastfm_badge_wrapper ul {
   list-style-type: none;
   list-style-image: none;
   list-style: none;
 }
-/* line 31, sass/_lastfm.scss */
+/* line 22, sass/_lastfm.scss */
 #lastfm_badge_wrapper li {
   margin: 0;
   display: inline-block;
@@ -384,22 +106,22 @@ td {
   -moz-box-shadow: 1px 1px 2px 0px black;
   box-shadow: 1px 1px 2px 0px black;
 }
-/* line 37, sass/_lastfm.scss */
+/* line 28, sass/_lastfm.scss */
 #lastfm_badge_wrapper li:not(:last-child) {
   margin-right: 10px;
 }
-/* line 40, sass/_lastfm.scss */
+/* line 31, sass/_lastfm.scss */
 #lastfm_badge_wrapper li a {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
-/* line 45, sass/_lastfm.scss */
+/* line 36, sass/_lastfm.scss */
 #lastfm_badge_wrapper li img {
   position: absolute;
   left: 0;
 }
-/* line 50, sass/_lastfm.scss */
+/* line 41, sass/_lastfm.scss */
 #lastfm_badge_wrapper ul * {
   width: 36px;
   height: 36px;
@@ -439,58 +161,38 @@ abbr:hover {
 }
 
 /* line 43, sass/style.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 47, sass/style.scss */
 h2 {
   font-size: 42px;
   margin-bottom: 20px;
 }
 
-/* line 48, sass/style.scss */
+/* line 52, sass/style.scss */
 h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h2 {
   font-size: 32px;
   display: inline;
   margin: 0 15px 0 0;
 }
 
-/* line 54, sass/style.scss */
+/* line 58, sass/style.scss */
 .symbol {
   font-family: "SignifyLite";
 }
 
-/* line 58, sass/style.scss */
-#wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 30px;
-  -webkit-box-shadow: 0px 0px 30px 5px black;
-  -moz-box-shadow: 0px 0px 30px 5px black;
-  box-shadow: 0px 0px 30px 5px black;
+/* Header */
+/* line 63, sass/style.scss */
+header {
+  text-align: center;
 }
 /* line 65, sass/style.scss */
-#wrapper > ol, #wrapper footer, #wrapper article, #wrapper #pagination_container {
-  width: 640px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Header */
-/* line 74, sass/style.scss */
-header a {
-  color: #fff;
-}
-/* line 77, sass/style.scss */
-header h1 {
-  font-size: 18px;
-  font-weight: 700;
-  display: inline-block;
-}
-/* line 82, sass/style.scss */
-header #nav_bar, header #expanded_nav_bar {
-  padding: 12px 8px 10px;
-  position: fixed;
-  top: 0px;
-  left: 10px;
+header #nav_bar {
+  padding: 5px 8px 2px;
+  position: relative;
+  top: -60px;
   overflow: hidden;
   background: #1d1d1d;
   background: rgba(29, 29, 29, 0.8);
@@ -498,25 +200,35 @@ header #nav_bar, header #expanded_nav_bar {
   display: inline-block;
   text-shadow: 1px 1px 1px #222222;
 }
-/* line 94, sass/style.scss */
-header #expanded_nav_bar {
-  left: 35px;
-  margin-left: 20px;
-  padding: 13px 8px 12px;
-  display: inline;
+/* line 76, sass/style.scss */
+header #nav_bar a {
+  color: #fff;
 }
-/* line 100, sass/style.scss */
-header #expanded_nav_bar #pages_list {
-  display: inline;
+/* line 79, sass/style.scss */
+header #nav_bar h1 {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 10px;
 }
-/* line 102, sass/style.scss */
-header #expanded_nav_bar #pages_list li {
+/* line 87, sass/style.scss */
+header #nav_bar #pages_list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  position: relative;
+  top: 10px;
+}
+/* line 93, sass/style.scss */
+header #nav_bar #pages_list li {
   display: inline;
   font-size: 12px;
   margin-right: 5px;
 }
-/* line 108, sass/style.scss */
-header #expanded_nav_bar .search_icon {
+/* line 99, sass/style.scss */
+header #nav_bar .search_icon {
   display: none;
   position: relative;
   top: 1px;
@@ -525,21 +237,34 @@ header #expanded_nav_bar .search_icon {
   font-size: 14px;
   cursor: pointer;
 }
-/* line 118, sass/style.scss */
+/* line 109, sass/style.scss */
 header #photo_bar_container {
   height: 300px;
 }
 
-/* line 124, sass/style.scss */
+/* Wrapper */
+/* line 115, sass/style.scss */
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 128, sass/style.scss */
 article > * {
   max-width: 640px;
 }
-/* line 127, sass/style.scss */
+/* line 131, sass/style.scss */
 article .article_title, article .page_title {
   margin-bottom: 15px;
   position: relative;
 }
-/* line 130, sass/style.scss */
+/* line 134, sass/style.scss */
 article .article_title .title_icon, article .page_title .title_icon {
   opacity: 0;
   position: absolute;
@@ -554,17 +279,17 @@ article .article_title .title_icon, article .page_title .title_icon {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 139, sass/style.scss */
+/* line 143, sass/style.scss */
 article .article_title:hover .title_icon, article .page_title:hover .title_icon {
   opacity: 1;
 }
-/* line 144, sass/style.scss */
+/* line 148, sass/style.scss */
 article .post_content, article .page_content {
   font-family: "Open Sans", sans-serif;
   margin: 0 0 50px;
   line-height: 24px;
 }
-/* line 148, sass/style.scss */
+/* line 152, sass/style.scss */
 article .post_content a, article .page_content a {
   border-bottom: solid 2px #eee;
   -webkit-transition-property: border-bottom;
@@ -576,50 +301,55 @@ article .post_content a, article .page_content a {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 152, sass/style.scss */
+/* line 156, sass/style.scss */
 article .post_content a:hover, article .page_content a:hover {
   border-bottom: solid 2px #ccc;
 }
-/* line 156, sass/style.scss */
+/* line 159, sass/style.scss */
+article .post_content a img, article .page_content a img {
+  border: none;
+  vertical-align: top;
+}
+/* line 164, sass/style.scss */
 article .post_content p, article .page_content p {
   margin-bottom: 15px;
 }
-/* line 159, sass/style.scss */
+/* line 167, sass/style.scss */
 article .post_content blockquote, article .page_content blockquote {
   margin-left: 25px;
   padding-left: 25px;
   border-left: solid 10px #f7f7f7;
   font-style: italic;
 }
-/* line 165, sass/style.scss */
+/* line 173, sass/style.scss */
 article .post_content ol, article .page_content ol, article .post_content ul, article .page_content ul {
   margin-left: 40px;
 }
-/* line 169, sass/style.scss */
+/* line 177, sass/style.scss */
 article .post_content ul li, article .page_content ul li {
   list-style-type: disc;
   margin-bottom: 10px;
 }
-/* line 175, sass/style.scss */
+/* line 183, sass/style.scss */
 article .post_content ol li, article .page_content ol li {
   list-style-type: decimal;
   margin-bottom: 10px;
 }
-/* line 181, sass/style.scss */
+/* line 189, sass/style.scss */
 article .wp-caption {
   font-size: 14px;
   margin: 0 auto;
 }
-/* line 185, sass/style.scss */
+/* line 193, sass/style.scss */
 article .smaller {
   font-size: .7em;
 }
 
-/* line 195, sass/style.scss */
+/* line 203, sass/style.scss */
 .page_content #smart-archives-block, .page_content #smart-archives-list {
   margin-bottom: 10px;
 }
-/* line 197, sass/style.scss */
+/* line 205, sass/style.scss */
 .page_content #smart-archives-block a, .page_content #smart-archives-list a {
   color: #333;
   border-bottom: none;
@@ -633,36 +363,36 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 203, sass/style.scss */
+/* line 211, sass/style.scss */
 .page_content #smart-archives-block a:hover, .page_content #smart-archives-list a:hover {
   color: #666;
 }
-/* line 207, sass/style.scss */
+/* line 215, sass/style.scss */
 .page_content #smart-archives-block h2, .page_content #smart-archives-list h2 {
   font-size: 18px;
 }
-/* line 211, sass/style.scss */
+/* line 219, sass/style.scss */
 .page_content #smart-archives-block ul, .page_content #smart-archives-list ul {
   margin-bottom: 10px;
 }
-/* line 214, sass/style.scss */
+/* line 222, sass/style.scss */
 .page_content #smart-archives-block li, .page_content #smart-archives-list li {
   margin-bottom: 0;
 }
 
-/* line 220, sass/style.scss */
+/* line 228, sass/style.scss */
 #pagination_container {
   text-align: center;
 }
-/* line 223, sass/style.scss */
+/* line 231, sass/style.scss */
 #pagination_container .page-numbers:not(.next), #pagination_container .page-numbers:not(.prev) {
   margin: 0 2px;
 }
-/* line 226, sass/style.scss */
+/* line 234, sass/style.scss */
 #pagination_container .page-numbers.current {
   font-weight: bold;
 }
-/* line 229, sass/style.scss */
+/* line 237, sass/style.scss */
 #pagination_container .page-numbers:not(.current) {
   border-bottom: solid 2px #eee;
   -webkit-transition-property: border-bottom;
@@ -674,20 +404,20 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 233, sass/style.scss */
+/* line 241, sass/style.scss */
 #pagination_container .page-numbers:not(.current):hover {
   border-bottom: solid 2px #ccc;
 }
-/* line 237, sass/style.scss */
+/* line 245, sass/style.scss */
 #pagination_container .page-numbers.next {
   margin-left: 10px;
 }
-/* line 240, sass/style.scss */
+/* line 248, sass/style.scss */
 #pagination_container .page-numbers.prev {
   margin-right: 10px;
 }
 
-/* line 246, sass/style.scss */
+/* line 254, sass/style.scss */
 footer {
   padding-top: 20px;
   padding-bottom: 20px;

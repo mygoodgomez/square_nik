@@ -3,7 +3,7 @@ $(function() {
 	$('#photo_bar_container').attr('style', 'background:url('+headerImage+')');
 
 	$(window).on('scroll', function(e) {
-		onScrollHandler();
+		// onScrollHandler();
 	});
 
 	selectAlbumCovers();
@@ -17,8 +17,7 @@ function onScrollHandler() {
 	var scrolled = $(window).scrollTop();
 	var scrollLimit = 255;
 
-	var $navbar = $('#expanded_nav_bar');
-	var $elementsToAnimate = $('#expanded_nav_bar, #lastfm_badge_wrapper');
+	var $navbar = $('#nav_bar');
 
 	if(scrolled > scrollLimit && $navbar.is(":visible")) {
 		$elementsToAnimate.stop().animate({top:"-50"}, function(elem) {
@@ -50,5 +49,4 @@ function selectAlbumCovers() {
 	}
 
 	$('#lastfm_badge_wrapper ul').html($newCovers.html()).css('display','inline');
-	$('#lastfm_badge_wrapper').show();
 }

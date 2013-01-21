@@ -3,18 +3,9 @@
 @import "compass/css3";
 
 #lastfm_badge_wrapper {
-	display: none;
 	color:#fff;
-	margin: 0;
-	padding:2px 8px 2px;
 	text-decoration:none;
-	z-index: 0;
-	position: fixed;
-	right: 10px;
-	top: 0px;
-	z-index:1;
-	background: rgb(29, 29, 29);
-	background: rgba(29, 29, 29, .8);
+	display: inline;
 
 	.music_icon {
 		position:relative;

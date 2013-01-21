@@ -11,9 +11,9 @@ License URI:
 
 */
 
+@import "compass/reset";
 @import "compass/css3";
 
-@import "reset";
 @import "lastfm";
 @import "facebook_comments";
 
@@ -40,6 +40,10 @@ abbr {
 	}
 }
 
+b, strong {
+	font-weight: bold;
+}
+
 h2 {
 	font-size:42px;
 	margin-bottom:20px;
@@ -55,50 +59,37 @@ h3 {
 	font-family: "SignifyLite";
 }
 
-#wrapper {
-	min-height:100%;
-	height: auto !important;
-	height:100%;
-	margin:0 auto;
-	padding-top:30px;
-	@include single-box-shadow(#000, 0px, 0px, 30px, 5px);
-	> ol, footer, article, #pagination_container {
-		width: 640px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
-
 /* Header */
 header {
-	a {
-		color:#fff;
-	}
-	h1 {
-		font-size: 18px;
-		font-weight: 700;
-		display: inline-block;
-	}
+	text-align:center;
 	#nav_bar {
-		padding:12px 8px 10px;
-		position:fixed;
-		top:0px;
-		left:10px;
+		padding:5px 8px 2px;
+		position:relative;
+		top:-60px;
 		overflow:hidden;
 		background: rgb(29, 29, 29);
 		background: rgba(29, 29, 29, .8);
 		color:#fff;
 		display:inline-block;
 		@include text-shadow(1px 1px 1px #222);
-	}
-	#expanded_nav_bar {
-		@extend #nav_bar;
-		left:35px;
-		margin-left: 20px;
-		padding:13px 8px 12px;
-		display: inline;
+
+		a {
+			color:#fff;
+		}
+		h1 {
+			font-size: 18px;
+			font-weight: 700;
+			display: inline-block;
+			vertical-align: top;
+			position:relative;
+			top:10px;
+		}
 		#pages_list {
-			display: inline;
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 10px;
+			position:relative;
+			top: 10px;
 			li {
 				display: inline;
 				font-size: 12px;
@@ -119,6 +110,19 @@ header {
 		height:300px;
 	}
 }
+
+/* Wrapper */
+#wrapper {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	margin:0 auto;
+	padding-top:30px;
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 
 article {
 	> * {
@@ -151,6 +155,10 @@ article {
 			@include transition-duration(.5s);
 			&:hover {
 				border-bottom: solid 2px #ccc;
+			}
+			img {
+				border:none;
+				vertical-align: top;
 			}
 		}
 		p {

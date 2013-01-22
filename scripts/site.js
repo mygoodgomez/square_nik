@@ -1,22 +1,27 @@
 $(function() {
 	window.scroll(0,225);
 	$('#photo_bar_container').attr('style', 'background:url('+headerImage+')');
-
-	$(window).on('resize', function(e) {
-		onResizeHandler();
-	});
-
 	$('.wp-caption').css({'width':''});
-
 	selectAlbumCovers();
 
 	for(var i = 0; i < allHeaderImages.length; i++) {
 		new Image().src = allHeaderImages[i];
 	}
+
+	$(window).on('resize', function(e) {
+		onResizeHandler();
+	});
+	$(window).on('scroll', function(e) {
+		onScrollHandler();
+	});
 });
 
 function onResizeHandler() {
 	selectAlbumCovers();
+}
+
+function onScrollHandler() {
+	repositionNavBar();	
 }
 
 function selectAlbumCovers() {
@@ -36,22 +41,15 @@ function selectAlbumCovers() {
 			$(this).css({'display':'none'});
 		}
 	});
+}
 
-	// var selectedCoverIds = [];
+function repositionNavBar() {
+	var scrollVert = $(window).scrollTop();
+	var photoBarContainerHeight = $('#photo_bar_container').height();
+	var navBarHeight = $('#nav_bar').outerHeight();
 
-	// while(selectedCoverIds.length < 9) {
-	// 	var index = Math.floor(Math.random()*($covers.length));
-	// 	if($.inArray(index, selectedCoverIds) === -1) {
-	// 		selectedCoverIds.push(index);
-	// 	}
-	// }
 
-	// var $newCovers = $('<ul id="#lastfm_badge_wrapper"></ul>')
-	// for(var i = 0; i < $covers.length; i++) {
-	// 	if($.inArray(i, selectedCoverIds) !== -1) {
-	// 		$newCovers.append($covers[i]);
-	// 	}
-	// }
-
-	// $('#lastfm_badge_wrapper ul').html($newCovers.html()).css('display','inline');
+	if(scrollVert + navBarHeight < photoBarContainerHeight) {
+		$('#nav_bar').css({'top':scrollVert-300});
+	}
 }

@@ -55,6 +55,11 @@ h3 {
 	margin: 0 15px 0 0;
 }		
 
+img, video, canvas, iframe {
+	max-width:100%;
+	height: auto;
+}
+
 .symbol {
 	font-family: "SignifyLite";
 }
@@ -115,11 +120,10 @@ header {
 /* Wrapper */
 #wrapper {
 	min-height:100%;
-	height: auto !important;
 	height:100%;
 	margin:0 auto;
-	padding-top:30px;
-	width: 640px;
+	max-width: 640px;
+	padding:0 10px;
 	margin-right: auto;
 	margin-left: auto;
 }

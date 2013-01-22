@@ -1,5 +1,5 @@
 $(function() {
-	window.scroll(0,235);
+	window.scroll(0,225);
 	$('#photo_bar_container').attr('style', 'background:url('+headerImage+')');
 
 	$(window).on('resize', function(e) {
@@ -18,17 +18,18 @@ function onResizeHandler() {
 }
 
 function selectAlbumCovers() {
+	var maxCoversToShow = 15;
 	var $covers = $('#lastfm_badge_wrapper ul li');
 	var coverWidth = $covers.first().outerWidth() + 10;
 	var $navBar = $('#nav_bar');
 	var $h1 = $navBar.find('h1');
 	var $pagesList = $navBar.find('#pages_list');
 
-	var coversAllowedWidth = $(window).width() - 200 - $h1.outerWidth() - $pagesList.outerWidth();
+	var coversAllowedWidth = $(window).width() - 150 - $h1.outerWidth() - $pagesList.outerWidth();
 	console.log(coversAllowedWidth);
 	
 	$covers.each(function(i) {
-		if((i * coverWidth) < coversAllowedWidth) {
+		if((i * coverWidth) < coversAllowedWidth && i < maxCoversToShow) {
 			$(this).css({'display':'inline-block'});
 		} else {
 			$(this).css({'display':'none'});

@@ -181,16 +181,27 @@ h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h
 }
 
 /* line 58, sass/style.scss */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 63, sass/style.scss */
+iframe {
+  max-width: 100%;
+}
+
+/* line 67, sass/style.scss */
 .symbol {
   font-family: "SignifyLite";
 }
 
 /* Header */
-/* line 63, sass/style.scss */
+/* line 72, sass/style.scss */
 header {
   text-align: center;
 }
-/* line 65, sass/style.scss */
+/* line 74, sass/style.scss */
 header #nav_bar {
   height: 39px;
   padding: 5px 8px 3px;
@@ -203,11 +214,11 @@ header #nav_bar {
   display: inline-block;
   text-shadow: 1px 1px 1px #222222;
 }
-/* line 77, sass/style.scss */
+/* line 86, sass/style.scss */
 header #nav_bar a {
   color: #fff;
 }
-/* line 80, sass/style.scss */
+/* line 89, sass/style.scss */
 header #nav_bar h1 {
   font-size: 18px;
   font-weight: 700;
@@ -216,7 +227,7 @@ header #nav_bar h1 {
   position: relative;
   top: 10px;
 }
-/* line 88, sass/style.scss */
+/* line 97, sass/style.scss */
 header #nav_bar #pages_list {
   display: inline-block;
   vertical-align: top;
@@ -224,13 +235,13 @@ header #nav_bar #pages_list {
   position: relative;
   top: 10px;
 }
-/* line 94, sass/style.scss */
+/* line 103, sass/style.scss */
 header #nav_bar #pages_list li {
   display: inline;
   font-size: 12px;
   margin-right: 5px;
 }
-/* line 100, sass/style.scss */
+/* line 109, sass/style.scss */
 header #nav_bar .search_icon {
   display: none;
   position: relative;
@@ -240,13 +251,13 @@ header #nav_bar .search_icon {
   font-size: 14px;
   cursor: pointer;
 }
-/* line 110, sass/style.scss */
+/* line 119, sass/style.scss */
 header #photo_bar_container {
   height: 300px;
 }
 
 /* Wrapper */
-/* line 116, sass/style.scss */
+/* line 125, sass/style.scss */
 #wrapper {
   min-height: 100%;
   height: 100%;
@@ -257,18 +268,9 @@ header #photo_bar_container {
   margin-left: auto;
 }
 
-/* line 128, sass/style.scss */
+/* line 137, sass/style.scss */
 article > * {
   max-width: 640px;
-}
-/* line 131, sass/style.scss */
-article * img, article * video, article * canvas {
-  max-width: 100%;
-  height: auto;
-}
-/* line 136, sass/style.scss */
-article * iframe {
-  max-width: 100%;
 }
 /* line 140, sass/style.scss */
 article .article_title, article .page_title {

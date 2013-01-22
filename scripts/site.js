@@ -6,6 +6,8 @@ $(function() {
 		onResizeHandler();
 	});
 
+	$('.wp-caption').css({'width':''});
+
 	selectAlbumCovers();
 
 	for(var i = 0; i < allHeaderImages.length; i++) {
@@ -26,7 +28,6 @@ function selectAlbumCovers() {
 	var $pagesList = $navBar.find('#pages_list');
 
 	var coversAllowedWidth = $(window).width() - 150 - $h1.outerWidth() - $pagesList.outerWidth();
-	console.log(coversAllowedWidth);
 	
 	$covers.each(function(i) {
 		if((i * coverWidth) < coversAllowedWidth && i < maxCoversToShow) {

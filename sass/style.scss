@@ -55,11 +55,6 @@ h3 {
 	margin: 0 15px 0 0;
 }		
 
-img, video, canvas, iframe {
-	max-width:100%;
-	height: auto;
-}
-
 .symbol {
 	font-family: "SignifyLite";
 }
@@ -133,6 +128,15 @@ article {
 	> * {
 		max-width: 640px;
 	}
+	* img, * video, * canvas {
+		max-width:100%;
+		height: auto;
+	}
+
+	* iframe {
+		max-width:100%;
+	}
+
 	.article_title {
 		margin-bottom: 15px;
 		position:relative;

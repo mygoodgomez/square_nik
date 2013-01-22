@@ -1,8 +1,9 @@
 $(function() {
-	window.scroll(0,225);
+	window.scroll(0,240);
 	$('#photo_bar_container').attr('style', 'background:url('+headerImage+')');
 	$('.wp-caption').css({'width':''});
 	selectAlbumCovers();
+	repositionNavBar();	
 
 	for(var i = 0; i < allHeaderImages.length; i++) {
 		new Image().src = allHeaderImages[i];
@@ -32,7 +33,7 @@ function selectAlbumCovers() {
 	var $h1 = $navBar.find('h1');
 	var $pagesList = $navBar.find('#pages_list');
 
-	var coversAllowedWidth = $(window).width() - 150 - $h1.outerWidth() - $pagesList.outerWidth();
+	var coversAllowedWidth = $(window).width() - 175 - $h1.outerWidth() - $pagesList.outerWidth();
 	
 	$covers.each(function(i) {
 		if((i * coverWidth) < coversAllowedWidth && i < maxCoversToShow) {

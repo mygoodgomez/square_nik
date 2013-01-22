@@ -176,8 +176,8 @@ h2 {
 /* line 52, sass/style.scss */
 h3, .page_content #smart-archives-block h2, .page_content #smart-archives-list h2 {
   font-size: 32px;
-  display: inline;
-  margin: 0 15px 0 0;
+  display: inline-block;
+  margin: 0 15px 5px 0;
 }
 
 /* line 58, sass/style.scss */
@@ -274,10 +274,14 @@ article > * {
 }
 /* line 140, sass/style.scss */
 article .article_title, article .page_title {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   position: relative;
 }
 /* line 143, sass/style.scss */
+article .article_title abbr, article .page_title abbr {
+  line-height: 24px;
+}
+/* line 146, sass/style.scss */
 article .article_title .title_icon, article .page_title .title_icon {
   opacity: 0;
   position: absolute;
@@ -292,17 +296,17 @@ article .article_title .title_icon, article .page_title .title_icon {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 152, sass/style.scss */
+/* line 155, sass/style.scss */
 article .article_title:hover .title_icon, article .page_title:hover .title_icon {
   opacity: 1;
 }
-/* line 157, sass/style.scss */
+/* line 160, sass/style.scss */
 article .post_content, article .page_content {
   font-family: "Open Sans", sans-serif;
   margin: 0 0 50px;
   line-height: 24px;
 }
-/* line 161, sass/style.scss */
+/* line 164, sass/style.scss */
 article .post_content a, article .page_content a {
   border-bottom: solid 2px #eee;
   -webkit-transition-property: border-bottom;
@@ -314,55 +318,55 @@ article .post_content a, article .page_content a {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 165, sass/style.scss */
+/* line 168, sass/style.scss */
 article .post_content a:hover, article .page_content a:hover {
   border-bottom: solid 2px #ccc;
 }
-/* line 168, sass/style.scss */
+/* line 171, sass/style.scss */
 article .post_content a img, article .page_content a img {
   border: none;
   vertical-align: top;
 }
-/* line 173, sass/style.scss */
+/* line 176, sass/style.scss */
 article .post_content p, article .page_content p {
   margin-bottom: 15px;
 }
-/* line 176, sass/style.scss */
+/* line 179, sass/style.scss */
 article .post_content blockquote, article .page_content blockquote {
   margin-left: 25px;
   padding-left: 25px;
   border-left: solid 10px #f7f7f7;
   font-style: italic;
 }
-/* line 182, sass/style.scss */
+/* line 185, sass/style.scss */
 article .post_content ol, article .page_content ol, article .post_content ul, article .page_content ul {
   margin-left: 40px;
 }
-/* line 186, sass/style.scss */
+/* line 189, sass/style.scss */
 article .post_content ul li, article .page_content ul li {
   list-style-type: disc;
   margin-bottom: 10px;
 }
-/* line 192, sass/style.scss */
+/* line 195, sass/style.scss */
 article .post_content ol li, article .page_content ol li {
   list-style-type: decimal;
   margin-bottom: 10px;
 }
-/* line 198, sass/style.scss */
+/* line 201, sass/style.scss */
 article .wp-caption {
   font-size: 14px;
   margin: 0 auto;
 }
-/* line 202, sass/style.scss */
+/* line 205, sass/style.scss */
 article .smaller {
   font-size: .7em;
 }
 
-/* line 212, sass/style.scss */
+/* line 215, sass/style.scss */
 .page_content #smart-archives-block, .page_content #smart-archives-list {
   margin-bottom: 10px;
 }
-/* line 214, sass/style.scss */
+/* line 217, sass/style.scss */
 .page_content #smart-archives-block a, .page_content #smart-archives-list a {
   color: #333;
   border-bottom: none;
@@ -376,36 +380,36 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 220, sass/style.scss */
+/* line 223, sass/style.scss */
 .page_content #smart-archives-block a:hover, .page_content #smart-archives-list a:hover {
   color: #666;
 }
-/* line 224, sass/style.scss */
+/* line 227, sass/style.scss */
 .page_content #smart-archives-block h2, .page_content #smart-archives-list h2 {
   font-size: 18px;
 }
-/* line 228, sass/style.scss */
+/* line 231, sass/style.scss */
 .page_content #smart-archives-block ul, .page_content #smart-archives-list ul {
   margin-bottom: 10px;
 }
-/* line 231, sass/style.scss */
+/* line 234, sass/style.scss */
 .page_content #smart-archives-block li, .page_content #smart-archives-list li {
   margin-bottom: 0;
 }
 
-/* line 237, sass/style.scss */
+/* line 240, sass/style.scss */
 #pagination_container {
   text-align: center;
 }
-/* line 240, sass/style.scss */
+/* line 243, sass/style.scss */
 #pagination_container .page-numbers:not(.next), #pagination_container .page-numbers:not(.prev) {
   margin: 0 2px;
 }
-/* line 243, sass/style.scss */
+/* line 246, sass/style.scss */
 #pagination_container .page-numbers.current {
   font-weight: bold;
 }
-/* line 246, sass/style.scss */
+/* line 249, sass/style.scss */
 #pagination_container .page-numbers:not(.current) {
   border-bottom: solid 2px #eee;
   -webkit-transition-property: border-bottom;
@@ -417,20 +421,20 @@ article .smaller {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-/* line 250, sass/style.scss */
+/* line 253, sass/style.scss */
 #pagination_container .page-numbers:not(.current):hover {
   border-bottom: solid 2px #ccc;
 }
-/* line 254, sass/style.scss */
+/* line 257, sass/style.scss */
 #pagination_container .page-numbers.next {
   margin-left: 10px;
 }
-/* line 257, sass/style.scss */
+/* line 260, sass/style.scss */
 #pagination_container .page-numbers.prev {
   margin-right: 10px;
 }
 
-/* line 263, sass/style.scss */
+/* line 266, sass/style.scss */
 footer {
   padding-top: 20px;
   padding-bottom: 20px;

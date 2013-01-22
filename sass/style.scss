@@ -51,8 +51,8 @@ h2 {
 
 h3 {
 	font-size: 32px;
-	display: inline;
-	margin: 0 15px 0 0;
+	display: inline-block;
+	margin: 0 15px 5px 0;
 }		
 
 img, video, canvas {
@@ -138,8 +138,11 @@ article {
 		max-width: 640px;
 	}
 	.article_title {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		position:relative;
+		abbr {
+			line-height: 24px;
+		}
 		.title_icon {
 			opacity: 0;
 			position:absolute;

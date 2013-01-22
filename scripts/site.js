@@ -52,7 +52,7 @@ function repositionNavBar() {
 
 	if(scrollVert + navBarHeight < photoBarContainerHeight) {
 		if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-			$('#nav_bar').animate({ top: scrollVert-300 }, 100);
+			$('#nav_bar').animate({ top: scrollVert-300 }, 250);
 		} else {
 			$('#nav_bar').css({'top':scrollVert-300});
 		}

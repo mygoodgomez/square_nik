@@ -51,7 +51,7 @@ h2 {
 
 h3 {
 	font-size: 32px;
-	display: inline-block;
+	display: inline;
 	margin: 0 15px 5px 0;
 }		
 
@@ -76,7 +76,6 @@ header {
 		padding:5px 8px 3px;
 		position:relative;
 		top:-60px;
-		overflow:hidden;
 		background: rgb(29, 29, 29);
 		background: rgba(29, 29, 29, .8);
 		color:#fff;
@@ -92,7 +91,7 @@ header {
 			display: inline-block;
 			vertical-align: top;
 			position:relative;
-			top:10px;
+			top:11px;
 		}
 		#pages_list {
 			display: inline-block;

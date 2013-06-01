@@ -15,6 +15,12 @@ $(function() {
 	$(window).on('scroll', function(e) {
 		onScrollHandler();
 	});
+	// $('.lastfm_album').on('mouseover', function(e) {
+	// 	albumArtMouseoverHandler(e);
+	// });
+	// $('.lastfm_album').on('mouseout', function(e) {
+	// 	albumArtMouseoutHandler(e);
+	// });
 });
 
 function onResizeHandler() {
@@ -57,4 +63,15 @@ function repositionNavBar() {
 			$('#nav_bar').css({'top':scrollVert-300});
 		}
 	}
+}
+
+function albumArtMouseoverHandler(event) {
+	var $album = $(event.currentTarget);
+	var $info = $album.parents('li').find('.info');
+	$info.fadeIn();
+}
+function albumArtMouseoutHandler(event) {
+	var $album = $(event.currentTarget);
+	var $info = $album.parents('li').find('.info');
+	$info.fadeOut();
 }

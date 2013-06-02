@@ -23,7 +23,7 @@ License URI:
 }
 
 html, body {
-	font-family: "Merriweather", serif;
+	font-family: "Open Sans", sans-serif;
 	height:100%;
 	color:#333;
 }
@@ -35,6 +35,7 @@ a {
 
 abbr {
 	display:inline-block;
+	border-bottom: 1px dotted rgba(0,0,0,0);
 	&:hover {
 		border-bottom: 1px dotted #ccc;
 	}
@@ -53,45 +54,45 @@ h3 {
 	font-size: 32px;
 	display: inline;
 	margin: 0 15px 5px 0;
+	font-weight: bold;
 }		
+
+iframe {
+	max-width:100%;
+}
 
 img, video, canvas {
 	max-width:100%;
 	height: auto;
 }
 
-iframe {
-	max-width:100%;
-}
-
 .symbol {
 	font-family: "SignifyLite";
 }
 
-/* Header */
+/* Header */ 
 header {
-	text-align:center;
+	text-align:center; 
 	#nav_bar {
-		height:39px;
+		height:40px;
 		padding:5px 8px 3px;
 		position:relative;
 		top:-60px;
-		background: rgb(29, 29, 29);
 		background: rgba(29, 29, 29, .8);
 		color:#fff;
 		display:inline-block;
 		@include text-shadow(1px 1px 1px #222);
 
 		a {
-			color:#fff;
+			color:#ffffff;
 		}
 		h1 {
-			font-size: 18px;
+			font-size: 24px;
 			font-weight: 700;
 			display: inline-block;
 			vertical-align: top;
 			position:relative;
-			top:11px;
+			top:7px;
 		}
 		#pages_list {
 			display: inline-block;
@@ -146,7 +147,7 @@ article {
 			opacity: 0;
 			position:absolute;
 			left: -25px;
-			top:5px;
+			top:6px;
 			@include transition-property(opacity);
 			@include transition-duration(.5s);
 		}

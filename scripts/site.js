@@ -32,7 +32,7 @@ function onScrollHandler() {
 }
 
 function selectAlbumCovers() {
-	var maxCoversToShow = 15;
+	var maxCoversToShow = 10;
 	var $covers = $('#lastfm_badge_wrapper ul li');
 	var coverWidth = $covers.first().outerWidth() + 10;
 	var $navBar = $('#nav_bar');

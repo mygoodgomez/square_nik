@@ -239,32 +239,29 @@ article {
 
 #pagination_container {
 	text-align:center;
+	background: #FAFAFA;
+	padding:0 0 10px 0;
 	.page-numbers {
+		padding-top:10px;
+		border-top: solid 2px #eee;
+		width:50px;
+		display: inline-block;
+		@include transition-property(border-top);
+		@include transition-duration(.5s);
+		&:hover {
+			border-top: solid 2px #ccc;
+		}			
 		&:not(.next), &:not(.prev) {
 			margin: 0 2px;
 		}
 		&.current {
-			font-weight: bold;
-		}
-		&:not(.current) {
-			border-bottom: solid 2px #eee;
-			@include transition-property(border-bottom);
-			@include transition-duration(.5s);
-			&:hover {
-				border-bottom: solid 2px #ccc;
-			}			
-		}
-		&.next {
-			margin-left:10px;
-		}
-		&.prev {
-			margin-right:10px;
+			border-top: solid 2px #aaa;
 		}
 	}
 }
 
 footer {
-	padding-top:20px;
-	padding-bottom:20px;
+	margin-top:40px;
+	margin-bottom:20px;
 	font-size:12px;
 }

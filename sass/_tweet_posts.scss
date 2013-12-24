@@ -7,6 +7,15 @@ article.tweet {
 	a {
 		border:none !important;
 	}
+    .tweet_link {
+        background: url(/wordpress/wp-content/themes/square_nik/images/twitter_icon.png);
+        display: block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: -45px;
+        top:-2px;
+    }
 
 
 }

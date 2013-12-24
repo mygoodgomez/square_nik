@@ -19,8 +19,11 @@
 
 <ol>
 <?php while ( have_posts() ) : the_post(); ?>
+	<?php
+	$articleClass = (in_category('Tweet')) ? 'tweet' : '';
+	?>
 	<li>
-		<article>
+		<article class="<?=$articleClass?>">
 			<div class="article_title">
 				<?php
 				if(the_title('','',false) == '') {

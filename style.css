@@ -157,22 +157,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 20px 0;
 }
 
-/* line 1, sass/_tweet_posts.scss */
-article.tweet {
+/* line 1, sass/_social_posts.scss */
+article.tweet, article.instagram {
   font-size: 18px;
   line-height: 20px;
 }
-/* line 4, sass/_tweet_posts.scss */
-article.tweet .article_title, article.tweet .page_title {
+/* line 4, sass/_social_posts.scss */
+article.tweet .article_title, article.tweet .page_title, article.instagram .article_title, article.instagram .page_title {
   display: none;
 }
-/* line 7, sass/_tweet_posts.scss */
-article.tweet a {
+/* line 7, sass/_social_posts.scss */
+article.tweet a, article.instagram a {
   border: none !important;
 }
-/* line 10, sass/_tweet_posts.scss */
-article.tweet .tweet_link {
+/* line 10, sass/_social_posts.scss */
+article.tweet .tweet_link, article.instagram .tweet_link {
   background: url(/wordpress/wp-content/themes/square_nik/images/twitter_icon.png);
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: -45px;
+  top: -2px;
+}
+/* line 19, sass/_social_posts.scss */
+article.tweet .instagram_link, article.instagram .instagram_link {
+  background: url(/wordpress/wp-content/themes/square_nik/images/instagram_icon.png);
   display: block;
   width: 32px;
   height: 32px;

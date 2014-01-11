@@ -20,10 +20,16 @@
 <ol>
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php
-	$articleClass = (in_category('Tweet')) ? 'tweet' : '';
+	$postCategories = wp_get_post_categories(get_the_ID());
+	$categoryNames = array();
+	foreach($postCategories as $c) {
+		$category = get_category($c);
+		$categoryNames[] = strtolower($category->name);
+	}
+	$articleClasses = implode(' ', $categoryNames);
 	?>
 	<li>
-		<article class="<?=$articleClass?>">
+		<article class="<?=$articleClasses?>">
 			<div class="article_title">
 				<?php
 				if(the_title('','',false) == '') {

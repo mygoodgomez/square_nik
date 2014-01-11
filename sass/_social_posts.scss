@@ -1,4 +1,4 @@
-article.tweet {
+article.tweet, article.instagram {
 	font-size:18px;
 	line-height:20px;
 	.article_title {
@@ -16,6 +16,13 @@ article.tweet {
         left: -45px;
         top:-2px;
     }
-
-
+    .instagram_link {
+        background: url(/wordpress/wp-content/themes/square_nik/images/instagram_icon.png);
+        display: block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: -45px;
+        top:-2px;        
+    }
 }
